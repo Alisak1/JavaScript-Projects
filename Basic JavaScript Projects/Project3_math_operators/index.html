@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+  <header>
+    <met charset="utf-8">
+    <script src="JS/main.js"></script>
+  </header>
+
+  <body>
+    <p id="Math"</p> 
+      <p>7 + 3 = </p>  
+      <input type = "button" onclick = "addition_myFunction()" value = "Answer"> <!--calling the add function with event handler-->
+
+      <p>8 - 3 = </p>  
+      <input type = "button" onclick = "subtraction_myFunction()" value = "Answer"> <!--calling the subtract function with event handler-->
+
+      <p>8 * 3 = </p>  
+      <input type = "button" onclick = "multiplication()" value = "Answer"> <!--calling the multiply function with event handler-->
+
+      <p>9 / 3 = </p>  
+      <input type = "button" onclick = "division()" value = "Answer"> <!--calling the divide function with event handler-->
+
+      <p>(9/3) * 3 + (2-1)</p>
+      <input type = "button" onclick = "more_Math()" value = "Answer"> <!--calling the multiple operators function with event handler-->
+
+      <p>The remainder of 9 divided by 4</p>
+      <input type = "button" onclick = "modulus_Operator()" value = "Answer"> <!--calling the modulus operator function with event handler-->
+
+      <p>One increment of 9 is</p> <!--Displayiing an increment-->
+      <script>
+        var X=9;{
+        X++;
+        document.write(X);
+        }
+      </script>
+
+      <p>One deincrement of 6.50 is</p> <!--Displayiing an deincrement-->
+      <script>
+       var x=6.50; {
+       x--;
+       document.write(x);
+      }
+      </script>
+
+      <p>Press button for a random number</p> 
+      <input type = "button" onclick = "document.write(Math.random())" value = "Random Number"> <!--Displayiing a random number on a new page-->
+      
+  </body>
+
+</html>
+ 
