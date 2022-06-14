@@ -1,4 +1,4 @@
-function Dictionary() {
+function Dictionary() { //Dictionary function with key value pair
     var Employee = {
         FirstName:"Matt",
         Birthdate:"06/11/88",
@@ -6,7 +6,8 @@ function Dictionary() {
         Age:"34",
         Citizenship:"US",
     };
-    document.getElementById("Dictionary").innerHTML = Employee.Citizenship;
+    delete Employee.Citizenship;//Deletes a key pair value statements
+    document.getElementById("Dictionary").innerHTML = Employee.Age;
 }
 
 
