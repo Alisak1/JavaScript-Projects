@@ -28,14 +28,14 @@ function subtract_numbers_2(){
   subtract_numbers_1();
   subtract_numbers_2();
 
-function get_Date() { //Get time function two options
+  function get_Date() { //Get time function two options
     if (new Date().getHours() < 12) {
     document.getElementById("Greeting").innerHTML="Good Morning!";
     }
     else {
         document.getElementById("Greeting").innerHTML="Good Afternoon!";
     }
-}
+
 function Score_Function() { //if else statement
     Score = document.getElementById("Score").value;
     if (Score >= 70) {
@@ -45,8 +45,8 @@ function Score_Function() { //if else statement
         Result = "Fail";
     }
     document.getElementById("Pass_or_Fail").innerHTML = Result;
-}
-function Time_Function() { //Get time function three option
+
+    function Time_Function() { //Get time function three option
         var Time = new Date().getHours() ;
         var Reply;
         if (Time < 9 == Time > 0) {
@@ -59,4 +59,4 @@ function Time_Function() { //Get time function three option
             Reply = "It\'s supper time!";
         }
         document.getElementById("Time_of_day").innerHTML = Reply;
-}
+    }
