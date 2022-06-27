@@ -1,62 +1,28 @@
-var X = 1; //Global Variable
-function subtract_numbers_1() {
-  document.write(15-X+"<br>");
+function full_Drama() { //Concat method
+    var part_1 ="Hawaii ";
+    var part_2 ="Five";
+    var part_3 ="-";
+    var part_4 ="O";
+    var result = part_1.concat(part_2, part_3, part_4);
+    document.getElementById("SHOW").innerHTML = result;
 }
-function subtract_numbers_2(){
-  document.write(X-1);
-}
-subtract_numbers_1();
-subtract_numbers_2();
 
-function subtract_numbers_1() { //Local Variable
-    var X = 1
-    document.write(15-X+"<br>");
+function slice_Method() { //Slice method
+    var Sentence="All work and no play makes Johnny a dull boy.";
+    var Section = Sentence.slice(27,33);
+    document.getElementById("Slice").innerHTML = Section;
 }
-function subtract_numbers_2(){
-    document.write(X-1);
+ 
+function string_Method() { //toString method
+    var X=500;
+    document.getElementById("Numbers_to_string").innerHTML = X.toString();
 }
-  subtract_numbers_1();
-  subtract_numbers_2();
 
-function subtract_numbers_1() { //Console Log error
-    var X = 1;
-    console.log(15-X);
+function precision_Method() { //toPrecision method
+    var X=24.681234567812345;
+    document.getElementById("Precision").innerHTML = X.toPrecision(15);
 }
-function subtract_numbers_2(){
-    console.log(X-1);
+
+function toFixed_Method() { //toFixed method
+    document.getElementById("demo").innerHTML = n;
 }
-  subtract_numbers_1();
-  subtract_numbers_2();
-
-  function get_Date() { //Get time function two options
-    if (new Date().getHours() < 12) {
-    document.getElementById("Greeting").innerHTML="Good Morning!";
-    }
-    else {
-        document.getElementById("Greeting").innerHTML="Good Afternoon!";
-    }
-
-function Score_Function() { //if else statement
-    Score = document.getElementById("Score").value;
-    if (Score >= 70) {
-        Result = "Pass";
-    }
-    else {
-        Result = "Fail";
-    }
-    document.getElementById("Pass_or_Fail").innerHTML = Result;
-
-    function Time_Function() { //Get time function three option
-        var Time = new Date().getHours() ;
-        var Reply;
-        if (Time < 9 == Time > 0) {
-            Reply = "It\'s coffee time!";
-        }
-        else if (Time = 4 == Time < 5) {
-            Reply= "It\'s Tea Time!";
-        }
-        else {
-            Reply = "It\'s supper time!";
-        }
-        document.getElementById("Time_of_day").innerHTML = Reply;
-    }

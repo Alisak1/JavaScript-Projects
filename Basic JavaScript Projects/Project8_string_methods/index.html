@@ -7,12 +7,44 @@
   </header>
 
 <body>
-  <p id="Greeting" onclick="get_Date()">Click Here.</p> <!--Depending on time will greet by morning or afternoon.-->
+  <p id="SHOW"></p> 
+  <button onlick="full_Drama()">Drama TV Show</button>
 
-  <p>What is the test score?</p> <!--Will return pass or fail depending on grade.-->
-  <input id="Score" value="" />
-  <p id="Pass_or_Fail"></p>
-  <button onclick="Score_Function()">Click here</button>
+  <p id="Slice"></p>
+  <button onclick="slice_Method()">Click Here</button>
+
+  <p id="state"></p>
+  <script>
+    let text = "u.s.a";
+    let result = text.toUpperCase();
+
+    document.getElementById("state").innerHTML = result;
+  </script>
+
+  <p id="Numbers_to_string"></p>
+  <button onclick="string_Method()">Click Here</button>
+
+  <p id="Precision"></p>
+  <button onclick="precision_Method()">Click Here</button>
+
+  <p id="demo"></p>
+
+  <script>
+  let num = 3.1425768;
+  let n = num.toFixed(4);
+
+  document.getElementById("demo").innerHTML = n;
+  </script>
+
+  <p id="example"></p>
+
+  <script>
+  let text = "Good Morning!";
+  let result = text;
+ 
+  document.getElementById("example").innerHTML = result;
+  </script>
+
 </body>
 
 </html>
