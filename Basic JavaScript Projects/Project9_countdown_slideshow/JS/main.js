@@ -17,3 +17,18 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
+function countdown() {
+  var seconds = document.getElementById("seconds").value;
+
+  function tick() {
+    seconds = seconds - 1;
+    timer.innerHTML = seconds;
+    var timer = setTimeout(tick, 1000);
+    if (seconds == - 1) {
+      clearTimeout(time);
+      timer.innerHTML="";
+    }  
+  }
+  tick();
+}
