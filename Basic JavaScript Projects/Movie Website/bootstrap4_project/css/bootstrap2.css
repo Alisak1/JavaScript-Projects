@@ -1,0 +1,126 @@
+
+/*=====================
+   HEADER
+======================*/
+
+/*=====================
+   NAVIGATION BAR
+======================*/
+
+/* Style the navbar links */
+#navbar a {
+    display: inline-block;
+    color: rgb(253, 252, 252);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 5px;
+    background-color: rgb(8, 13, 57);
+    padding-right: 20px; 
+  }
+
+/* Change background on hover */
+#navbar a:hover {
+    background-color:rgb(134, 111, 179);
+    color: black;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(235, 156, 247);
+}
+
+/* Centered text in image */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Center img */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+/* Image and Effects */
+img {
+ filter: blur(2px);
+ border: 5px solid black;
+ border-radius: 20px 20px;
+ border-bottom: 100px;
+}
+
+/*=====================
+  BODY
+======================*/
+/* Main Page */
+h1 { 
+    text-align: center;
+}
+
+/* Table */
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    width: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+td, th {
+    border: 2px solid rgb(87, 4, 74);
+    padding: 5px;
+  }
+tr:nth-child(1){
+    background-color: aquamarine;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: tabel;
+    clear: both;
+}
+
+h2 {
+    color: rgb(237, 237, 244);
+}
+a.ex1:hover, a.ex1:active {color: rgb(173, 26, 163);}
+
+h3 {
+    color: rgb(34, 34, 103);
+}
+
+.video-banner {
+    position: relative;
+  }
+.video-banner .overlay {
+    position: absolute;
+    top: 20%;
+    left: 24%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+  }
+
+/*=====================
+  FOOTER
+======================*/
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5%;
+}
