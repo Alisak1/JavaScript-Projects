@@ -1,0 +1,43 @@
+<!DOCUTYPE HTML>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+        <script src="./js/lightbox.js"></script>
+		<link rel="stylesheet" href="./css/Lightbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+  <body>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="./Images/Large/plant1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./Images/Large/plant2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+  </div>
+        <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./Images/Thumbs/plant1-small.png" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./Images/Thumbs/plant2-small.png" onclick="currentSlide(2)" alt="Snow">
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+  </html>
