@@ -48,6 +48,7 @@ function Handle_Operator(Next_Operator) {
         Calculator.operator = Next_Operator; 
         return; 
     }
+
     if (First_Operand == null) { 
     Calculator.First_Operand = Value_of_Input; 
     } else if (operator) {//Checks if an operator already exists
@@ -59,13 +60,13 @@ function Handle_Operator(Next_Operator) {
         //Here we add a fixed amount of numbers after the decimal. 
         result = Number(result).toFixed (9); 
         //This will remove any trailing 0's 
-        result = (result *l).toString(); 
+        result = (result *1).toString(); 
         Calculator.Display_Value = parseFloat(result); 
         Calculator.First_Operand = parseFloat(result); 
     } 
     Calculator.Wait_Second_Operand = true; 
     Calculator.operator = Next_Operator; 
-
+}
 const Perform_Calculation = {
 '/':(First_Operand, Second_Operand) => First_Operand /  Second_Operand,
 '*':(First_Operand, Second_Operand) => First_Operand *  Second_Operand,
@@ -83,14 +84,14 @@ function Calculator_Reset() {
 function Update_Display() {
     //Makes use of the calculator-screen class to target the
     //input tag in the HTML document
-    const display= document.queryselector('.calculator-screen'); 
+    const display= document.querySelector('.calculator-screen'); 
     display.value= Calculator.Display_Value;
 }
 
 Update_Display();
 //This section monitors button clicks
 const keys= document.querySelector('.calculator-keys'); 
-keys.addEventlistener('click', (event)=> {
+keys.addEventListener('click', (event)=> {
     //The target variable is an object that represents the element
     //that was clicked.
     const {target}= event;
@@ -98,22 +99,22 @@ keys.addEventlistener('click', (event)=> {
     if (!target.matches('button')) {
         return;
     }
-    if (target.classlist.contains('operator')) { 
+    if (target.classList.contains('operator')) { 
         Handle_Operator(target.value); 
         Update_Display();
         return;
     }
-    if (target.classlist.contains('decimal')) { 
+    if (target.classList.contains('decimal')) { 
         Input_Decimal(target.value); 
         Update_Display();
         return;
     }
     //Ensures that AC clears all inputs from the Calculator screen. 
-    if (target.classlist.contains('all-clear')) {
+    if (target.classList.contains('all-clear')) {
         Calculator_Reset();
         Update_Display(); 
         return;
     }
     Input_Digit(target.value); 
     Update_Display();
-}
+})

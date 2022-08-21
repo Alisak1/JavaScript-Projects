@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+<body> 
+<p id="XML_Example"></p> 
+
+<script> 
+var XML_Parser, XML_Document; 
+
+//creates a text str􀀁ng 
+var Car = "<CarType>" + 
+"<make>Hyundai</make>" +
+"<model>Sonata</model>" +
+"<color>Red</color>" +
+"<year>2010</year>" +
+"</CarType> ; 
+
+//creates an XML DOM parser 
+XML Parser = new DOMParser(); 
+
+//creates a new XML DOM object using the text string 
+XML_Document = XML_Parser.parseFromString (Car, "text/xml)";
+
+document.getElementById("XML_color").innerHTML = 
+XML_Document.getElementsByTagName ("color") [0].childnodes [0].nodeValue; 
+
+</script> 
+
+</body>
+</html>
