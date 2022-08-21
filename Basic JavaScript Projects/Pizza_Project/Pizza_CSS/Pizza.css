@@ -25,14 +25,14 @@ div {
 	}
 
 #frmMenu {
-	width:600px;
-	height:10px;
+	width:400px;
+	height:200px;
 	}
 
 #totalPrice {
 	width:200px;
 	height:190px;
-	margin:20px auto;
+	margin:0 auto;
 	float:right;
 	}
 
@@ -45,7 +45,7 @@ div {
 .center {
         width:200px;
         height:200px;
-        float:left;
+        float:right;
         }
         
  .right {
@@ -69,8 +69,6 @@ div {
 	
 #btnOrder {
 	margin:10px 0px 0px 100px;
-	width:200px;
+	width:150px;
 	height:40px;
-	display: block;
-	margin: 25px auto;
 	}

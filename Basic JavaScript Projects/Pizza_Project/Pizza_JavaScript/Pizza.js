@@ -4,7 +4,7 @@ function getReceipt() {
     var text1 = "<h3>You Ordered:</h3>"; 
     var runningTotal = O; 
     var sizeTotal = O; 
-    for (var i=0; i <sizeArray.length: i++) {
+    for (var i=0; i <sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
             text1 =text1+selectedSize+"<br>";
@@ -13,15 +13,15 @@ function getReceipt() {
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Kids Pizza") {
-        sizeTotal = 7:
+        sizeTotal = 7;
     } else if (selectedSize === "Small Pizza") {
-        sizeTotal = 8:
+        sizeTotal = 8;
     } else if (selectedSize === "Medium  Pizza") {
-        sizeTotal = 10:
+        sizeTotal = 10;
     } else if (selectedSize === "Large Pizza") {
-        sizeTotal = 14:
+        sizeTotal = 14;
     } else if (selectedSize === "Extra Large Pizza") {
-        sizeTotal = 16:
+        sizeTotal = 16;
     }
     runningTotal = sizeTotal; 
     console.log(selectedSize+" =$"+sizeTotal+".00"); 
@@ -34,20 +34,21 @@ function getReceipt() {
 function getTopping(runningTotal,textl) { 
     var toppingTotal=0;
     var selectedTopping = [];
-    var toppingArray = document.getE_ementsByClassName("toppings );
+    var toppingArray = document.getElementsByClassName("toppings");
     for (var j=0; j < toppingArray.length; j++) { 
         if (toppingArray[j] .checked) { 
             selectedTopping.push(toppingArray[j] .value); 
             console.log("selected topping item: ("+toppingArray[j].value+")");
-            text1 = text1+topping[j].value+"<br>":
+            text1 = text1+topping[j].value+"<br>";
         }
     }
     var toppingCount=selectedTopping.length;
     if (toppingCount >1) {
+        toppingTotal=(toppingCount -1);
     } else {
-`       toppingTotal = 0:`
+`       toppingTotal = 0;`
     }
-    runningTotoal = (runningTotal + toppingTotal);
+    runningTotal = (runningTotal + toppingTotal);
     console.log( total selected topping items: "+toppingCount); 
     console.log (toppingCount+" topping -1 free topping ="+"$"+toppingTotal+".00"); 
     console.log (topping text1: "+text1");
