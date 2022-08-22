@@ -1,0 +1,143 @@
+<!DOCUTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <script src="./js/one_page_website.js"></script>
+		<link rel="stylesheet" href="./css/one-page-website.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+  <body>
+    <!-- NAV -->
+    <div>
+      <div>
+        <ul>
+          <a href="#home" id="link"><li>HOME</li></a>
+          <a href="#gallery" id="link"><li>GALLERY</li></a>
+          <a href="#contact" id="link"><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </div>
+    <!-- END NAV --
+s
+    <!-- HOME -->
+    <div id="home">
+      <div>
+        <div>
+          <h1>FLOWERS BY ALISA</h1>
+	  <p>Flower Arrangements for any occasion.</p>
+        </div>
+      </div>
+    </div>
+    <!-- END HOME -->
+
+    <!-- GALLERY -->
+    <section>
+      <div id="gallery">
+        <h1>GALLERY</h1>
+      </div>
+
+      <!-- VIDEO-CONTAINER 1 -->
+      <div>
+        <div>
+         <iframe width=420 height=315 src="./Time-Lapse - Watch Flowers Bloom Before Your Eyes _ Short Film Showcase-LjCzPp-MK48.mp4"></iframe>
+          <div>
+            <p>The wonder of flowers.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END VIDEO-CONTAINER 1 --
+
+
+      <!-- LIGHTBOX-CONTAINER 1 -->
+      <!-- Images used to open the lightbox -->
+      <h2 style="text-align:center">Gallery</h2>
+
+      <div class="row">
+        <div class="column">
+          <img src="./Images/Thumbs/plant1-small.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumbs/plant2-small.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumbs/plant3-small.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumbs/plant4-small.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Images/Large/plant1.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Images/Large/plant2.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Images/Large/plant3.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./Images/Large/plant4.png" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumbs/plant1-small.png" style="width:100%" onclick="currentSlide(1)" alt="Cherry Blossom">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumbs/plant2-small.png" style="width:100%" onclick="currentSlide(2)" alt="Sunflowers">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumbs/plant3-small.png" style="width:100%" onclick="currentSlide(3)" alt="Cacti">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumbs/plant4-small.png" style="width:100%" onclick="currentSlide(4)" alt="Greens">
+          </div>
+        </div>
+      </div>
+      <!-- END LIGHTBOX GALLERY -->
+
+    <!-- CONTACT -->
+    <section>
+      <div id="contact">
+        <div class="contact-form">
+      	    <form action="" method="get">
+	          First name: <input type="text" name="First_Name"><br>
+	          Last name: <input type="text" name="Last_Name"><br>
+	          Email: <input type="email" name="Email"><br>
+	          Message: <input type="email" name="Message"><br>
+	          <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+      <!-- END CONTACT -->
+
+      <!-- FOOTER -->
+      <div>
+        <div class="footer">
+        www.flowersbyAlisa.space &nbsp;| &nbsp; &copy; 2022
+        </div>
+    </div>
+      <!-- END FOOTER -->
+
+  </body>
+</html>
