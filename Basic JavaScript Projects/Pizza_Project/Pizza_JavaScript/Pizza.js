@@ -17,7 +17,7 @@ function getReceipt(){
         sizeTotal = 7;
     } else if (selectedSize === "Small Pizza") {
         sizeTotal = 8;
-    } else if (selectedSize === "Medium  Pizza") {
+    } else if (selectedSize === "Medium Pizza") {
         sizeTotal = 10;
     } else if (selectedSize === "Large Pizza") {
         sizeTotal = 14;
@@ -33,7 +33,7 @@ function getReceipt(){
 }
 
 
-function getTopping(runningTotal,textl) { 
+function getTopping(runningTotal,text1) { 
     var toppingTotal=0;
     var selectedTopping = [];
     var toppingArray = document.getElementsByClassName("toppings");
@@ -41,7 +41,7 @@ function getTopping(runningTotal,textl) {
         if (toppingArray[j] .checked) { 
             selectedTopping.push(toppingArray[j] .value); 
             console.log("selected topping item: ("+toppingArray[j].value+")");
-            text1 = text1+topping[j].value+"<br>";
+            text1 = text1+toppingArray[j].value+"<br>";
         }
     }
     var toppingCount=selectedTopping.length;
@@ -57,5 +57,5 @@ function getTopping(runningTotal,textl) {
     console.log ("Purchase Total: "+"$"+runningTotal+".00");
     document.getElementById("showText").innerHTML=text1;
     document.getElementById("totalPrice").innerHTML="<h3>Total: <strong>$"+
-    runningTotal+".00"+</strong></h3>";
+    runningTotal+".00"+"</strong></h3>";
 };

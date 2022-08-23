@@ -25,14 +25,14 @@ div {
 	}
 
 #frmMenu {
-	width:400px;
+	width:600px;
 	height:200px;
 	}
 
 #totalPrice {
 	width:200px;
 	height:190px;
-	margin:0 auto;
+	margin:20px auto;
 	float:right;
 	}
 
@@ -68,7 +68,8 @@ div {
     }
 	
 #btnOrder {
-	margin:10px 0px 0px 100px;
+	margin:15px 0px 0px 150px;
 	width:150px;
-	height:40px;
+	display: center;
+	height:25px;
 	}
