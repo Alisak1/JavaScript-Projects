@@ -1,9 +1,10 @@
-function getReceipt() {
+function getReceipt(){
     //This initializes our string so it can get passed from 
     // function to function, grow:ng 􀀊ine by 1:ne 1nto a full receipt
     var text1 = "<h3>You Ordered:</h3>"; 
-    var runningTotal = O; 
-    var sizeTotal = O; 
+    var runningTotal = 0; 
+    var sizeTotal = 0; 
+    var sizeArray = document.getElementsByClassName("size");
     for (var i=0; i <sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
@@ -26,10 +27,11 @@ function getReceipt() {
     runningTotal = sizeTotal; 
     console.log(selectedSize+" =$"+sizeTotal+".00"); 
     console.log("size text1: "+text1); 
-    console.log("subtotal: $"+runningTotal+".00 ); 
+    console.log("subtotal: $"+runningTotal+".00"); 
     //these variable will get passed on to each function 
     getTopping(runningTotal,text1); 
 }
+
 
 function getTopping(runningTotal,textl) { 
     var toppingTotal=0;
@@ -49,10 +51,11 @@ function getTopping(runningTotal,textl) {
 `       toppingTotal = 0;`
     }
     runningTotal = (runningTotal + toppingTotal);
-    console.log( total selected topping items: "+toppingCount); 
+    console.log ("total selected topping items: "+toppingCount); 
     console.log (toppingCount+" topping -1 free topping ="+"$"+toppingTotal+".00"); 
-    console.log (topping text1: "+text1");
-    console.log (Purchase Total: "+"$"+runningTotal+".00");
+    console.log ("topping text1: " + text1);
+    console.log ("Purchase Total: "+"$"+runningTotal+".00");
     document.getElementById("showText").innerHTML=text1;
-    document.getElementById("totalPrice").innerHTML="<h3>Total: <strong>$"+runningTotal+".00"+</strong></h3>"";
+    document.getElementById("totalPrice").innerHTML="<h3>Total: <strong>$"+
+    runningTotal+".00"+</strong></h3>";
 };
