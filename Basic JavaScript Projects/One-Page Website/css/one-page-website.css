@@ -1,17 +1,12 @@
 html {
 
-  body {
     font-family: fantasy;
     font-size: 20px;
-    height: 100px;
-    width: 400px;
     margin:0;
     border-radius: 3px;
-}
+
 }
 
-
-#lightbox {
   body {
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -175,7 +170,7 @@ section {
     font-weight: 200;
     color: #137ce6;
     padding: 5px 20px;
-    width: 50%;
+    width: 20%;
     border: 1px solid #808080;
     margin: 1px 2px;
     border-radius: 15px;
