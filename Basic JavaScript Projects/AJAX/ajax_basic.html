@@ -13,24 +13,24 @@
 			</div>
 		<script type="text/javascript">
 		
-        //Step 1: setup the xml http request object
-        var ajax = new XMLHttpRequest();
+            //Step 1: setup the xml http request object
+            var ajax = new XMLHttpRequest();
 
-        //Step 2: prepare the open ajax request
-        ajax.open('GET', 'content.html');
+            //Step 2: prepare the open ajax request
+            ajax.open('GET', 'content.html');
 
-        //Step 3: define the ajax response callback method
-        ajax.onreadystatechange = function () {
-            if (ajax.readyState - 4) {
-                document.getElementIdBy('content').innerHTML = ajax.responseText;
+            //Step 3: define the ajax response callback method
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState - 4) {
+                    document.getElementIdBy('content').innerHTML = ajax.responseText;
+                }
             }
-        }
-    
-        //Step 4: send the ajax request for data
-        function getContent() {
-            ajax.send();
-            document.getElementById('btn_content').style.display = 'none';
-        }
+            
+            //Step 4: send the ajax request for data
+            function getContent() {
+                ajax.send();
+                document.getElementById('btn_content').style.display = 'none';
+            }
 		</script>
     </body>
 </html>
